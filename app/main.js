@@ -1,4 +1,6 @@
-import CarController from "./components/carController.js";
+import CarController from "./components/car/carController.js";
+import HouseController from "./components/house/houseController.js";
+
 
 
 
@@ -6,7 +8,8 @@ import CarController from "./components/carController.js";
 class App {
     constructor() {
         this.controllers = {
-            carController: new CarController()
+            carController: new CarController(),
+            houseController: new HouseController()
         }
     }
 }

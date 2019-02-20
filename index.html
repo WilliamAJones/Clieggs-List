@@ -18,21 +18,19 @@
                 <h1>WELCOME TO GREG'S LIST</h1>
             </div>
         </header>
-        <section>
-            <form onsubmit="app.controllers.carController.addCar(event)">
-                <input type="text" name="title" placeholder="Title" required>
-                <input type="text" name="description" placeholder="Description">
-                <input type="number" name="price" placeholder="Price" required>
-                <input type="url" name="img" placeholder="Image" required>
-                <button type="submit">Submit</button>
-            </form>
+        <div>
+            <button onclick="app.controllers.carController.getCars()">CARS</button>
+            <button onclick="app.controllers.houseController.getHouses()">HOUSES</button>
+        </div>
+        <section id="form-content">
+
         </section>
-        <main class="row" id="available-cars">
+        <main class="row" id="available-content">
 
         </main>
     </section>
 
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js"></script>
 
     <script type="module" src="app/main.js"></script>
 </body>
