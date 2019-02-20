@@ -11,8 +11,8 @@ function draw() {
         template += car.getTemplate()
     });
     document.getElementById('available-content').innerHTML = template
-    document.getElementById('form-content').innerHTML = `            
-    <form onsubmit="app.controllers.carController.addCar(event)">
+    document.getElementById('form-content').innerHTML = `
+        <form onsubmit="app.controllers.carController.addCar(event)">
         <input type="text" name="make" placeholder="Make" required>
         <input type="text" name="model" placeholder="Model" required>
         <input type="decimal" name="year" placeholder="Year" required>

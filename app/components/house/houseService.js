@@ -39,4 +39,26 @@ export default class HouseService {
                 setState('houses', data)
             })
     }
+    addHouse(rawHouse) {
+        let newHouse = new House(rawHouse)
+        _api.post('houses', newHouse)
+            .then(res => {
+                this.getApiHouses()
+            })
+    }
+    deleteHouse(id) {
+        _api.delete('houses/' + id)
+            .then(res => {
+                this.getApiHouses()
+            })
+    }
+    bid(houseToFindId) {
+        let house = _state.houses.find(h => h._id == houseToFindId)
+        house.price = parseInt(house.price)
+        house.price++
+        _api.put('houses/' + house._id, house)
+            .then(res => {
+                this.getApiHouses()
+            })
+    }
 }

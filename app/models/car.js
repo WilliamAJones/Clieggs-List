@@ -1,11 +1,11 @@
 export default class Car {
     constructor(data) {
-        this._id = data._id
-        this.make = data.make
-        this.model = data.model
-        this.price = parseInt(data.price).toFixed(2)
+        this._id = data._id || "Unavailable"
+        this.make = data.make 
         this.year = data.year
-        this.imgUrl = data.imgUrl
+        this.model = data.model || "Unavailable"
+        this.price = parseInt(data.price).toFixed(2) || "Unavailable"
+        this.imgUrl = data.imgUrl || "Unavailable"
         this.description = data.description || 'No Description Provided'
     }
 

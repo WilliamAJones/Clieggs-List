@@ -1,0 +1,61 @@
+body{
+    background-image: url(./tattoine.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+    color:white;
+    text-shadow: 2px 2px black;
+    font-family: 'Roboto Mono', monospace;
+}
+.card{
+    background-color:rgba(128, 0, 128, 0.315);
+    align-items: center!important;
+    text-shadow: 1px 1px black;
+    /* max-height: 100%; */
+    border-top-color:rgba(128, 0, 128, 0.466);
+    border-right-color: rgba(128, 0, 128, 0.466);
+    border-right-style:solid;
+    border-top-style:solid;
+    /* padding-top: 30px; */
+    padding-bottom: 30px;
+}
+h1{
+    letter-spacing: 25px;
+    color: yellow; 
+    text-shadow: 3px 3px black;
+    font-weight: bolder;
+
+}
+h3{
+    letter-spacing: 5px;
+    color: yellow; 
+    text-shadow: 3px 3px black;
+    font-weight: bolder;
+}
+
+img{
+border-radius: 50%;
+} 
+.foot{
+    background-color: rgba(0, 0, 0, 0.432);
+}
+.head{
+    background-color:rgba(0, 0, 0, 0.432);
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.head-mid{
+    background-color: rgba(0, 0, 0, 0.336);
+}
+.selector{
+    min-height: 10vh;
+    padding-bottom: 20px;
+}
+.flip{
+    transform: scaleX(-1)
+}
+/* .veh-btn{
+    
+} */
